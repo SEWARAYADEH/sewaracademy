@@ -52,17 +52,19 @@ const ContactPage = () => {
     },
     {
       icon: Phone,
-      titleEn: 'Phone',
-      titleAr: 'الهاتف',
-      valueEn: '+962 79 XXX XXXX',
-      valueAr: '+962 79 XXX XXXX',
+      titleEn: 'Phone / WhatsApp',
+      titleAr: 'الهاتف / واتساب',
+      valueEn: '00962770715872',
+      valueAr: '00962770715872',
+      link: 'https://wa.me/962770715872',
     },
     {
       icon: Mail,
       titleEn: 'Email',
       titleAr: 'البريد الإلكتروني',
-      valueEn: 'info@asasoftware.com',
-      valueAr: 'info@asasoftware.com',
+      valueEn: 'info@sewaracademy.online',
+      valueAr: 'info@sewaracademy.online',
+      link: 'mailto:info@sewaracademy.online',
     },
   ];
 
@@ -95,7 +97,13 @@ const ContactPage = () => {
                 </h2>
                 
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="bg-card border-4 border-border p-6 hover:border-primary transition-all">
+                  <a 
+                    key={index} 
+                    href={info.link || '#'}
+                    target={info.link?.startsWith('http') ? '_blank' : undefined}
+                    rel={info.link?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="bg-card border-4 border-border p-6 hover:border-primary transition-all block cursor-pointer"
+                  >
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
                         <info.icon className="w-6 h-6 text-primary-foreground" />
@@ -104,12 +112,12 @@ const ContactPage = () => {
                         <h3 className="font-bold text-foreground">
                           {language === 'ar' ? info.titleAr : info.titleEn}
                         </h3>
-                        <p className="text-muted-foreground" dir={info.valueEn.includes('+') ? 'ltr' : undefined}>
+                        <p className="text-muted-foreground" dir="ltr">
                           {language === 'ar' ? info.valueAr : info.valueEn}
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
 
                 {/* Working Hours */}
