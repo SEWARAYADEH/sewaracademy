@@ -74,13 +74,25 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
                 <span>{language === 'ar' ? 'عمّان، الأردن' : 'Amman, Jordan'}</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-primary-foreground/80">
-                <Phone className="w-4 h-4 text-accent flex-shrink-0" />
-                <span dir="ltr">+962 79 XXX XXXX</span>
+              <li>
+                <a 
+                  href="https://wa.me/962770715872" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span dir="ltr">00962770715872</span>
+                </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-primary-foreground/80">
-                <Mail className="w-4 h-4 text-accent flex-shrink-0" />
-                <span>info@asasoftware.com</span>
+              <li>
+                <a 
+                  href="mailto:info@sewaracademy.online"
+                  className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
+                >
+                  <Mail className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span>info@sewaracademy.online</span>
+                </a>
               </li>
             </ul>
           </div>
