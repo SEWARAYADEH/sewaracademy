@@ -93,38 +93,69 @@ export function HeroSection() {
                 <span className="ml-4 text-xs text-muted-foreground font-mono">asa-software.js</span>
               </div>
 
-              {/* Code Content */}
-              <div className="font-mono text-sm md:text-base space-y-2">
-                <div>
-                  <span className="text-primary">const</span>{' '}
-                  <span className="text-foreground">academy</span> = {'{'}
-                </div>
-                <div className={`${isRTL ? 'pr-6' : 'pl-6'}`}>
-                  <span className="text-muted-foreground">name:</span>{' '}
-                  <span className="text-accent">"ASA Software"</span>,
-                </div>
-                <div className={`${isRTL ? 'pr-6' : 'pl-6'}`}>
-                  <span className="text-muted-foreground">type:</span>{' '}
-                  <span className="text-accent">"LMS + Software House"</span>,
-                </div>
-                <div className={`${isRTL ? 'pr-6' : 'pl-6'}`}>
-                  <span className="text-muted-foreground">location:</span>{' '}
-                  <span className="text-accent">"USA → Jordan"</span>,
-                </div>
-                <div className={`${isRTL ? 'pr-6' : 'pl-6'}`}>
-                  <span className="text-muted-foreground">courses:</span>{' '}
-                  <span className="text-primary">12</span>,
-                </div>
-                <div className={`${isRTL ? 'pr-6' : 'pl-6'}`}>
-                  <span className="text-muted-foreground">languages:</span>{' '}
-                  <span className="text-accent">["AR", "EN"]</span>,
-                </div>
-                <div>{'}'}</div>
-                <div className="pt-4">
-                  <span className="text-primary">await</span>{' '}
-                  <span className="text-foreground">academy</span>.
-                  <span className="text-primary">startLearning</span>()
-                  <span className="animate-pulse">▌</span>
+              {/* Marketing Content */}
+              <div className="space-y-4 text-sm md:text-base">
+                {/* Hook */}
+                <p className="text-muted-foreground leading-relaxed">
+                  {isRTL
+                    ? 'أي موقع إلكتروني أو تطبيق — لأي غاية كانت وبأي ميزانية'
+                    : 'Any website or mobile application — for any purpose and any budget'}
+                </p>
+
+                {/* Main message */}
+                <p className="text-foreground leading-relaxed">
+                  {isRTL ? (
+                    <>
+                      في{' '}
+                      <span className="text-primary font-bold">ASA Software</span>{' '}
+                      نُفصّل لك الحل بدقّة حسب
+                      <span className="text-accent font-semibold">
+                        {' '}
+                        قدرتك المالية
+                      </span>
+                      ، الوقت، وسرعة التنفيذ المطلوبة.
+                    </>
+                  ) : (
+                    <>
+                      At{' '}
+                      <span className="text-primary font-bold">ASA Software</span>, we tailor
+                      your solution precisely based on your{' '}
+                      <span className="text-accent font-semibold">
+                        budget, timeline
+                      </span>
+                      , and required delivery speed.
+                    </>
+                  )}
+                </p>
+
+                {/* Learning option */}
+                <p className="text-foreground leading-relaxed">
+                  {isRTL ? (
+                    <>
+                      وإن كنت تفضّل التعلّم بدل التنفيذ،
+                      نوفّر تدريبًا{' '}
+                      <span className="text-primary font-semibold">لايف</span> مع إمكانية{' '}
+                      <span className="text-accent font-semibold">
+                        الدفع بالتقسيط
+                      </span>.
+                    </>
+                  ) : (
+                    <>
+                      If you prefer learning instead of outsourcing, we offer{' '}
+                      <span className="text-primary font-semibold">
+                        live, hands-on training
+                      </span>{' '}
+                      with flexible{' '}
+                      <span className="text-accent font-semibold">
+                        installment payment options
+                      </span>.
+                    </>
+                  )}
+                </p>
+
+                {/* Cursor */}
+                <div className="pt-2">
+                  <span className="animate-pulse text-primary text-xl">▌</span>
                 </div>
               </div>
 
