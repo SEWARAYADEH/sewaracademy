@@ -104,7 +104,7 @@ const AboutPage = () => {
                   {language === 'ar' ? 'مديرة المنصة' : 'Platform Director'}
                 </h2>
                 <h3 className="text-2xl md:text-3xl font-bold text-primary mb-2">
-                  {language === 'ar' ? 'م. سوار محمود أعيده' : 'Eng. Sewar Mahmoud Aida'}
+                  {language === 'ar' ? 'م. سوار محمود أعيده' : 'Eng. SEWAR MAHMOUD I\'AYADEH'}
                 </h3>
                 <p className="text-lg text-muted-foreground">
                   {language === 'ar' 
