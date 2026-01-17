@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import logo from '@/assets/logo.png';
 export function Footer() {
   const { t, language, isRTL } = useLanguage();
   const currentYear = new Date().getFullYear();
@@ -31,14 +31,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">ASA</span>
-              </div>
-              <div>
-                <div className="font-bold text-lg">
-                  {language === 'ar' ? 'أكاديمية سوار' : 'ASA Software'}
-                </div>
-              </div>
+              <img 
+                src={logo} 
+                alt="ASA Software Logo" 
+                className="h-12 w-auto bg-white p-1 rounded"
+              />
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               {t.footer.description}

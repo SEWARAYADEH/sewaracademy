@@ -4,7 +4,7 @@ import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { cn } from '@/lib/utils';
-
+import logo from '@/assets/logo.png';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage, t, isRTL } = useLanguage();
@@ -31,17 +31,11 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-primary-foreground font-bold text-lg md:text-xl">ASA</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-bold text-sm md:text-base text-foreground">
-                {language === 'ar' ? 'أكاديمية سوار' : 'ASA Software'}
-              </div>
-              <div className="text-xs text-muted-foreground">
-                {language === 'ar' ? 'البرمجة والهندسة' : 'Programming & Engineering'}
-              </div>
-            </div>
+            <img 
+              src={logo} 
+              alt="ASA Software Logo" 
+              className="h-10 md:h-14 w-auto transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
