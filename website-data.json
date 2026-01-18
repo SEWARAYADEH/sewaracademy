@@ -1,0 +1,526 @@
+{
+  "platform": {
+    "name": {
+      "ar": "أكاديمية سوار للبرمجيات",
+      "en": "Sewar Software Academy"
+    },
+    "location": {
+      "ar": "الأردن - عمان",
+      "en": "Jordan - Amman"
+    },
+    "email": "info@sewar-academy.com",
+    "phone": "+962 79 123 4567",
+    "workingHours": {
+      "ar": "الأحد - الخميس: 9 صباحاً - 5 مساءً",
+      "en": "Sun - Thu: 9AM - 5PM"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "0 0% 100%",
+      "foreground": "240 10% 3.9%",
+      "card": "0 0% 100%",
+      "cardForeground": "240 10% 3.9%",
+      "popover": "0 0% 100%",
+      "popoverForeground": "240 10% 3.9%",
+      "primary": "142 76% 36%",
+      "primaryForeground": "355 100% 100%",
+      "secondary": "240 4.8% 95.9%",
+      "secondaryForeground": "240 5.9% 10%",
+      "muted": "240 4.8% 95.9%",
+      "mutedForeground": "240 3.8% 46.1%",
+      "accent": "142 76% 36%",
+      "accentForeground": "355 100% 100%",
+      "destructive": "0 84.2% 60.2%",
+      "destructiveForeground": "0 0% 100%",
+      "border": "240 5.9% 90%",
+      "input": "240 5.9% 90%",
+      "ring": "142 76% 36%",
+      "success": "142 76% 36%",
+      "successForeground": "355 100% 100%",
+      "warning": "38 92% 50%",
+      "warningForeground": "0 0% 100%",
+      "info": "199 89% 48%",
+      "infoForeground": "0 0% 100%"
+    },
+    "dark": {
+      "background": "240 10% 3.9%",
+      "foreground": "0 0% 98%",
+      "card": "240 10% 3.9%",
+      "cardForeground": "0 0% 98%",
+      "popover": "240 10% 3.9%",
+      "popoverForeground": "0 0% 98%",
+      "primary": "142 70% 45%",
+      "primaryForeground": "144 100% 100%",
+      "secondary": "240 3.7% 15.9%",
+      "secondaryForeground": "0 0% 98%",
+      "muted": "240 3.7% 15.9%",
+      "mutedForeground": "240 5% 64.9%",
+      "accent": "142 70% 45%",
+      "accentForeground": "144 100% 100%",
+      "destructive": "0 62.8% 50.6%",
+      "destructiveForeground": "0 0% 98%",
+      "border": "240 3.7% 25%",
+      "input": "240 3.7% 15.9%",
+      "ring": "142 70% 45%",
+      "success": "142 70% 45%",
+      "successForeground": "144 100% 100%",
+      "warning": "38 92% 50%",
+      "warningForeground": "0 0% 100%",
+      "info": "199 89% 48%",
+      "infoForeground": "0 0% 100%"
+    },
+    "sidebar": {
+      "background": "0 0% 98%",
+      "foreground": "240 5.3% 26.1%",
+      "primary": "142 76% 36%",
+      "primaryForeground": "0 0% 98%",
+      "accent": "240 4.8% 95.9%",
+      "accentForeground": "240 5.9% 10%",
+      "border": "220 13% 91%",
+      "ring": "217.2 91.2% 59.8%"
+    },
+    "charts": {
+      "chart1": "142 76% 36%",
+      "chart2": "199 89% 48%",
+      "chart3": "38 92% 50%",
+      "chart4": "280 65% 60%",
+      "chart5": "340 75% 55%"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "english": "Space Grotesk",
+      "arabic": "Cairo",
+      "code": "JetBrains Mono, Fira Code"
+    },
+    "sizes": {
+      "h1": "text-3xl md:text-4xl lg:text-5xl xl:text-6xl",
+      "h2": "text-3xl md:text-4xl lg:text-5xl",
+      "h3": "text-2xl font-bold",
+      "h4": "text-xl font-bold",
+      "body": "text-base",
+      "small": "text-sm",
+      "large": "text-lg"
+    }
+  },
+  "courses": [
+    {
+      "id": "web-fundamentals",
+      "titleEn": "Web Development Fundamentals",
+      "titleAr": "أساسيات تطوير الويب",
+      "descriptionEn": "Learn HTML, CSS, JavaScript and build responsive websites",
+      "descriptionAr": "تعلم HTML و CSS و JavaScript وبناء مواقع متجاوبة",
+      "hours": 40,
+      "price": 299,
+      "level": "beginner",
+      "category": "programming",
+      "featured": true,
+      "icon": "Globe"
+    },
+    {
+      "id": "react-advanced",
+      "titleEn": "Advanced React Development",
+      "titleAr": "تطوير React المتقدم",
+      "descriptionEn": "Master React hooks, state management, and advanced patterns",
+      "descriptionAr": "إتقان React hooks وإدارة الحالة والأنماط المتقدمة",
+      "hours": 60,
+      "price": 499,
+      "level": "advanced",
+      "category": "programming",
+      "featured": true,
+      "icon": "Code"
+    },
+    {
+      "id": "python-data-science",
+      "titleEn": "Python for Data Science",
+      "titleAr": "Python لعلم البيانات",
+      "descriptionEn": "Data analysis, visualization, and machine learning with Python",
+      "descriptionAr": "تحليل البيانات والتصور والتعلم الآلي باستخدام Python",
+      "hours": 50,
+      "price": 399,
+      "level": "intermediate",
+      "category": "programming",
+      "featured": true,
+      "icon": "Database"
+    },
+    {
+      "id": "mobile-development",
+      "titleEn": "Mobile App Development",
+      "titleAr": "تطوير تطبيقات الجوال",
+      "descriptionEn": "Build cross-platform mobile apps with React Native",
+      "descriptionAr": "بناء تطبيقات جوال متعددة المنصات باستخدام React Native",
+      "hours": 55,
+      "price": 449,
+      "level": "intermediate",
+      "category": "programming",
+      "featured": false,
+      "icon": "Smartphone"
+    },
+    {
+      "id": "ui-ux-design",
+      "titleEn": "UI/UX Design Masterclass",
+      "titleAr": "إتقان تصميم UI/UX",
+      "descriptionEn": "Design beautiful and user-friendly interfaces",
+      "descriptionAr": "تصميم واجهات جميلة وسهلة الاستخدام",
+      "hours": 35,
+      "price": 349,
+      "level": "beginner",
+      "category": "design",
+      "featured": true,
+      "icon": "Palette"
+    },
+    {
+      "id": "database-management",
+      "titleEn": "Database Management",
+      "titleAr": "إدارة قواعد البيانات",
+      "descriptionEn": "SQL, NoSQL, and database design principles",
+      "descriptionAr": "SQL و NoSQL ومبادئ تصميم قواعد البيانات",
+      "hours": 30,
+      "price": 279,
+      "level": "intermediate",
+      "category": "programming",
+      "featured": false,
+      "icon": "Database"
+    },
+    {
+      "id": "devops-essentials",
+      "titleEn": "DevOps Essentials",
+      "titleAr": "أساسيات DevOps",
+      "descriptionEn": "CI/CD, Docker, Kubernetes, and cloud deployment",
+      "descriptionAr": "CI/CD و Docker و Kubernetes والنشر السحابي",
+      "hours": 45,
+      "price": 399,
+      "level": "intermediate",
+      "category": "programming",
+      "featured": false,
+      "icon": "Server"
+    },
+    {
+      "id": "cybersecurity",
+      "titleEn": "Cybersecurity Fundamentals",
+      "titleAr": "أساسيات الأمن السيبراني",
+      "descriptionEn": "Network security, ethical hacking, and security best practices",
+      "descriptionAr": "أمن الشبكات والاختراق الأخلاقي وأفضل ممارسات الأمان",
+      "hours": 40,
+      "price": 449,
+      "level": "beginner",
+      "category": "programming",
+      "featured": false,
+      "icon": "Shield"
+    },
+    {
+      "id": "project-management",
+      "titleEn": "Project Management",
+      "titleAr": "إدارة المشاريع",
+      "descriptionEn": "Agile, Scrum, and project management tools",
+      "descriptionAr": "Agile و Scrum وأدوات إدارة المشاريع",
+      "hours": 25,
+      "price": 249,
+      "level": "beginner",
+      "category": "business",
+      "featured": false,
+      "icon": "Briefcase"
+    },
+    {
+      "id": "business-analysis",
+      "titleEn": "Business Analysis",
+      "titleAr": "تحليل الأعمال",
+      "descriptionEn": "Requirements gathering, documentation, and stakeholder management",
+      "descriptionAr": "جمع المتطلبات والتوثيق وإدارة أصحاب المصلحة",
+      "hours": 30,
+      "price": 299,
+      "level": "intermediate",
+      "category": "business",
+      "featured": false,
+      "icon": "BarChart"
+    },
+    {
+      "id": "digital-marketing",
+      "titleEn": "Digital Marketing",
+      "titleAr": "التسويق الرقمي",
+      "descriptionEn": "SEO, SEM, social media marketing, and analytics",
+      "descriptionAr": "SEO و SEM والتسويق عبر وسائل التواصل الاجتماعي والتحليلات",
+      "hours": 20,
+      "price": 199,
+      "level": "beginner",
+      "category": "business",
+      "featured": false,
+      "icon": "TrendingUp"
+    },
+    {
+      "id": "graphic-design",
+      "titleEn": "Graphic Design Essentials",
+      "titleAr": "أساسيات التصميم الجرافيكي",
+      "descriptionEn": "Adobe Creative Suite, branding, and visual design",
+      "descriptionAr": "Adobe Creative Suite والعلامة التجارية والتصميم المرئي",
+      "hours": 35,
+      "price": 299,
+      "level": "beginner",
+      "category": "design",
+      "featured": false,
+      "icon": "PenTool"
+    }
+  ],
+  "services": [
+    {
+      "id": "corporate-websites",
+      "titleEn": "Corporate Websites",
+      "titleAr": "مواقع الشركات",
+      "descriptionEn": "Professional corporate websites with modern design",
+      "descriptionAr": "مواقع شركات احترافية بتصميم عصري",
+      "priceRange": "$500 - $2,000",
+      "category": "web",
+      "featured": true,
+      "features": [
+        "Responsive Design",
+        "SEO Optimization",
+        "Admin Dashboard",
+        "Contact Forms",
+        "Analytics Integration"
+      ],
+      "icon": "Globe"
+    },
+    {
+      "id": "ecommerce",
+      "titleEn": "E-Commerce Platforms",
+      "titleAr": "منصات التجارة الإلكترونية",
+      "descriptionEn": "Full-featured online stores with payment integration",
+      "descriptionAr": "متاجر إلكترونية كاملة المزايا مع تكامل الدفع",
+      "priceRange": "$1,500 - $5,000",
+      "category": "web",
+      "featured": true,
+      "features": [
+        "Payment Gateway",
+        "Inventory Management",
+        "Order Tracking",
+        "Customer Portal",
+        "Reports & Analytics"
+      ],
+      "icon": "ShoppingCart"
+    },
+    {
+      "id": "mobile-apps",
+      "titleEn": "Mobile Applications",
+      "titleAr": "تطبيقات الجوال",
+      "descriptionEn": "Native and cross-platform mobile applications",
+      "descriptionAr": "تطبيقات جوال أصلية ومتعددة المنصات",
+      "priceRange": "$2,000 - $8,000",
+      "category": "mobile",
+      "featured": true,
+      "features": [
+        "iOS & Android",
+        "Push Notifications",
+        "Offline Support",
+        "App Store Submission",
+        "Maintenance & Updates"
+      ],
+      "icon": "Smartphone"
+    },
+    {
+      "id": "custom-software",
+      "titleEn": "Custom Software",
+      "titleAr": "برمجيات مخصصة",
+      "descriptionEn": "Tailored software solutions for your business needs",
+      "descriptionAr": "حلول برمجية مصممة لاحتياجات عملك",
+      "priceRange": "$3,000 - $15,000",
+      "category": "software",
+      "featured": false,
+      "features": [
+        "Requirements Analysis",
+        "Custom Development",
+        "Integration",
+        "Training",
+        "Ongoing Support"
+      ],
+      "icon": "Code"
+    },
+    {
+      "id": "ui-ux-design",
+      "titleEn": "UI/UX Design",
+      "titleAr": "تصميم واجهات المستخدم",
+      "descriptionEn": "Beautiful and intuitive user interface designs",
+      "descriptionAr": "تصميمات واجهات مستخدم جميلة وبديهية",
+      "priceRange": "$800 - $3,000",
+      "category": "design",
+      "featured": false,
+      "features": [
+        "Wireframes",
+        "Prototypes",
+        "Design System",
+        "User Testing",
+        "Design Handoff"
+      ],
+      "icon": "Palette"
+    },
+    {
+      "id": "erp-systems",
+      "titleEn": "ERP Systems",
+      "titleAr": "أنظمة ERP",
+      "descriptionEn": "Enterprise resource planning systems",
+      "descriptionAr": "أنظمة تخطيط موارد المؤسسات",
+      "priceRange": "$5,000 - $25,000",
+      "category": "software",
+      "featured": true,
+      "features": [
+        "Accounting",
+        "Inventory",
+        "HR Management",
+        "CRM",
+        "Reporting"
+      ],
+      "icon": "Building"
+    },
+    {
+      "id": "digital-marketing",
+      "titleEn": "Digital Marketing",
+      "titleAr": "التسويق الرقمي",
+      "descriptionEn": "Complete digital marketing services",
+      "descriptionAr": "خدمات التسويق الرقمي الشاملة",
+      "priceRange": "$500 - $2,000/month",
+      "category": "marketing",
+      "featured": false,
+      "features": [
+        "SEO",
+        "SEM/PPC",
+        "Social Media",
+        "Content Marketing",
+        "Email Marketing"
+      ],
+      "icon": "TrendingUp"
+    }
+  ],
+  "erpSubscription": {
+    "annual": 1200,
+    "fullPurchase": 8000
+  },
+  "accreditations": [
+    {
+      "id": "aiae",
+      "name": "AIAE",
+      "fullName": "American Institute of Accredited Education",
+      "nameAr": "المعهد الأمريكي للتعليم المعتمد",
+      "type": "International American Accreditation",
+      "typeAr": "اعتماد دولي أمريكي",
+      "descriptionEn": "Internationally recognized certificates from an accredited American educational institution",
+      "descriptionAr": "شهادات معترف بها دولياً من مؤسسة تعليمية أمريكية معتمدة"
+    },
+    {
+      "id": "eoqm",
+      "name": "EOQM",
+      "fullName": "European Organization for Quality Management",
+      "nameAr": "المنظمة الأوروبية لإدارة الجودة",
+      "type": "European Quality Accreditation",
+      "typeAr": "اعتماد أوروبي للجودة",
+      "descriptionEn": "Quality assurance for training programs according to European standards",
+      "descriptionAr": "ضمان جودة البرامج التدريبية وفق المعايير الأوروبية"
+    },
+    {
+      "id": "apostille",
+      "name": "Apostille",
+      "fullName": "Apostille International Certification",
+      "nameAr": "التصديق الدولي",
+      "type": "International Government Authentication",
+      "typeAr": "تصديق حكومي دولي",
+      "descriptionEn": "Certificates authenticated by the Jordanian Ministry of Foreign Affairs, recognized in 124 countries",
+      "descriptionAr": "شهادات مصدقة من الخارجية الأردنية ومعترف بها في 124 دولة"
+    }
+  ],
+  "statistics": {
+    "courses": "50+",
+    "students": "2000+",
+    "projects": "150+",
+    "trainingHours": "10,000+",
+    "countries": "124"
+  },
+  "visionMission": {
+    "vision": {
+      "ar": "أن نكون المنصة الرائدة في التعليم التقني والتطوير البرمجي في الوطن العربي، ونساهم في بناء جيل من المبرمجين والمطورين القادرين على المنافسة عالمياً",
+      "en": "To be the leading platform in technical education and software development in the Arab world, contributing to building a generation of programmers and developers capable of competing globally"
+    },
+    "mission": {
+      "ar": "تقديم تعليم تقني عالي الجودة ومعتمد دولياً، مع التركيز على التطبيق العملي والمشاريع الحقيقية، لتمكين المتدربين من دخول سوق العمل بثقة وكفاءة",
+      "en": "Providing high-quality, internationally accredited technical education, focusing on practical application and real projects, to empower trainees to enter the job market with confidence and competence"
+    }
+  },
+  "director": {
+    "nameAr": "م. سوار محمود إعياده",
+    "nameEn": "Eng. Sewar Mahmoud I'AYADEH",
+    "titleAr": "المؤسسة والمديرة التنفيذية",
+    "titleEn": "Founder & CEO",
+    "specialty": "Software Engineering",
+    "skills": [
+      "Web Development (React, Node.js, Python)",
+      "Technical Project Management",
+      "ERP System Design",
+      "Technical Training & Education",
+      "International Accreditations"
+    ]
+  },
+  "pages": {
+    "public": [
+      { "path": "/", "nameAr": "الرئيسية", "nameEn": "Home" },
+      { "path": "/about", "nameAr": "من نحن", "nameEn": "About" },
+      { "path": "/courses", "nameAr": "الدورات", "nameEn": "Courses" },
+      { "path": "/courses/:id", "nameAr": "تفاصيل الدورة", "nameEn": "Course Details" },
+      { "path": "/services", "nameAr": "الخدمات", "nameEn": "Services" },
+      { "path": "/accreditation", "nameAr": "الاعتمادات", "nameEn": "Accreditation" },
+      { "path": "/portfolio", "nameAr": "أعمالنا", "nameEn": "Portfolio" },
+      { "path": "/contact", "nameAr": "اتصل بنا", "nameEn": "Contact" },
+      { "path": "/privacy", "nameAr": "سياسة الخصوصية", "nameEn": "Privacy Policy" },
+      { "path": "/terms", "nameAr": "الشروط والأحكام", "nameEn": "Terms & Conditions" }
+    ],
+    "auth": [
+      { "path": "/login", "nameAr": "تسجيل الدخول", "nameEn": "Login" },
+      { "path": "/register", "nameAr": "إنشاء حساب", "nameEn": "Register" }
+    ],
+    "dashboards": [
+      { "path": "/dashboard/admin", "role": "admin", "nameAr": "لوحة المدير", "nameEn": "Admin Dashboard" },
+      { "path": "/dashboard/teacher", "role": "teacher", "nameAr": "لوحة المدرس", "nameEn": "Teacher Dashboard" },
+      { "path": "/dashboard/student", "role": "student", "nameAr": "لوحة الطالب", "nameEn": "Student Dashboard" }
+    ]
+  },
+  "designSystem": {
+    "radius": "0rem",
+    "borders": {
+      "thick": "border-4 border-border",
+      "medium": "border-2 border-border",
+      "thin": "border border-border"
+    },
+    "shadows": {
+      "brutal": "4px 4px 0px hsl(var(--foreground))",
+      "subtle": "0 2px 8px hsl(var(--foreground) / 0.1)",
+      "medium": "0 4px 16px hsl(var(--foreground) / 0.15)",
+      "large": "0 8px 32px hsl(var(--foreground) / 0.2)"
+    },
+    "animations": {
+      "float": "float 6s ease-in-out infinite",
+      "transition": "transition-all duration-300"
+    },
+    "buttonVariants": ["default", "destructive", "outline", "secondary", "ghost", "link"],
+    "buttonSizes": ["sm", "default", "lg", "icon"]
+  },
+  "socialLinks": {
+    "facebook": "facebook.com/sewar-academy",
+    "twitter": "twitter.com/sewar_academy",
+    "linkedin": "linkedin.com/company/sewar-academy",
+    "instagram": "instagram.com/sewar_academy",
+    "youtube": "youtube.com/@sewar-academy"
+  },
+  "languages": {
+    "ar": { "code": "ar", "name": "العربية", "direction": "rtl", "font": "Cairo" },
+    "en": { "code": "en", "name": "English", "direction": "ltr", "font": "Space Grotesk" }
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1400px"
+  },
+  "roles": [
+    { "id": "admin", "nameAr": "مدير", "nameEn": "Admin" },
+    { "id": "teacher", "nameAr": "مدرس", "nameEn": "Teacher" },
+    { "id": "student", "nameAr": "طالب", "nameEn": "Student" }
+  ]
+}
