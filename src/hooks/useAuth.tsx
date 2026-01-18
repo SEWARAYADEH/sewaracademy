@@ -23,7 +23,7 @@ interface AuthContextType {
   role: AppRole | null;
   isLoading: boolean;
   signIn: (email: string, password: string) => Promise<{ error: Error | null }>;
-  signUp: (email: string, password: string, name: string, role: AppRole) => Promise<{ error: Error | null }>;
+  signUp: (email: string, password: string, name: string) => Promise<{ error: Error | null }>;
   signOut: () => Promise<void>;
   updateProfile: (updates: Partial<Profile>) => Promise<{ error: Error | null }>;
 }
@@ -129,7 +129,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signUp = async (email: string, password: string, name: string, requestedRole: AppRole) => {
+  const signUp = async (email: string, password: string, name: string) => {
     try {
       const { data, error } = await supabase.auth.signUp({
         email,
@@ -144,12 +144,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return { error };
       }
 
-      // Note: Role assignment should be done by admin in production
-      // For demo purposes, we'll assign the role directly
+      // Security: Only 'student' role is allowed for self-registration
+      // Admin/teacher roles must be assigned by an admin
       if (data.user) {
         await supabase.from('user_roles').insert({
           user_id: data.user.id,
-          role: requestedRole
+          role: 'student' as AppRole
         });
       }
 
