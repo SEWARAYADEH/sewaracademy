@@ -4,8 +4,7 @@ import { Eye, EyeOff, UserPlus, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { useAuth, AppRole } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/useAuth';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
 
@@ -14,7 +13,6 @@ export function RegisterForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [role, setRole] = useState<AppRole>('student');
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { signUp } = useAuth();
@@ -49,7 +47,8 @@ export function RegisterForm() {
 
     setIsLoading(true);
 
-    const { error } = await signUp(email, password, name, role);
+    // Security: Only student role is allowed for self-registration
+    const { error } = await signUp(email, password, name);
 
     if (error) {
       toast({
@@ -119,27 +118,7 @@ export function RegisterForm() {
             />
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="role">
-              {language === 'ar' ? 'نوع الحساب' : 'Account Type'}
-            </Label>
-            <Select value={role} onValueChange={(value) => setRole(value as AppRole)}>
-              <SelectTrigger>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="student">
-                  {language === 'ar' ? 'طالب' : 'Student'}
-                </SelectItem>
-                <SelectItem value="teacher">
-                  {language === 'ar' ? 'مدرس' : 'Teacher'}
-                </SelectItem>
-                <SelectItem value="admin">
-                  {language === 'ar' ? 'مسؤول' : 'Admin'}
-                </SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+          {/* Role is automatically set to 'student' for security */}
 
           <div className="space-y-2">
             <Label htmlFor="password">
